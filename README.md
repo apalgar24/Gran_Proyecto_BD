@@ -25,3 +25,13 @@
 | **codigo_producto** | Cadena de caracteres de 15  | NOT NULL |
 | cantidad        | Número entero de 11         | NOT NULL |
 | preio_unidad    | Decimal de 15 y 2 decimales | NOT NULL |
+
+
+|                | TABLA DE PEDIDOS          |          |
+|----------------|---------------------------|----------|
+| **codigo_pedido**  | Número entero de 11       | NOT NULL |
+| **codigo_cliente** | Número entero de 11       | NOT NULL |
+| fecha_pedido   | Tipo fecha                | NOT NULL |
+| fecha_esperada | Tipo fecha                | NOT NULL |
+| fecha_entrega  | Tipo fecha                | NULL     |
+| estado         | Cadena de cracteres de 15 | NOT NULL |
