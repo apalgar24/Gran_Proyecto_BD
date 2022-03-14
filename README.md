@@ -35,3 +35,47 @@
 | fecha_esperada | Tipo fecha                | NOT NULL |
 | fecha_entrega  | Tipo fecha                | NULL     |
 | estado         | Cadena de cracteres de 15 | NOT NULL |
+
+
+|                            | TABLA DE CLIENTES          |          |
+|----------------------------|----------------------------|----------|
+| **codigo_cliente**             | Número entero de 13        | NOT NULL |
+| nombre_cliente             | Cadena de caracteres de 50 | NOT NULL |
+| nombre_contacto            | Cadena de caracteres de 30 | NULL     |
+| apellido_contacto          | Cadena de caracteres de 30 | NULL     |
+| telefono                   | Cadena de caracteres de 50 | NOT NULL |
+| direccion                  | Cadena de caracteres de 50 | NOT NULL |
+| ciudad                     | Cadena de caracteres de 50 | NOT NULL |
+| codigo_postal              | Cadena de caracteres de 10 | NULL     |
+| **codigo_empleado_rep_ventas** | Número entero de 11        | NOT NULL |
+
+
+|                | TABLA DE PAGO                      |          |
+|----------------|------------------------------------|----------|
+| **codigo_cliente** | Número entero de 11                | NOT NULL |
+| forma_pago     | Cadena de caracteres de 40         | NOT NULL |
+| **id_transición**  | Cadena de caracteres de 50         | NOT NULL |
+| fecha_pago     | Tipo fecha                         | NOT NULL |
+| total          | Númeor decimal de 15 y 2 decimales | NOT NULL |
+
+
+|                 | TABLA DE EMPLEADO           |          |
+|-----------------|-----------------------------|----------|
+| **codigo_empleado** | Número entero de 11         | NOT NULL |
+| nombre          | Cadena de caracteres de 50  | NOT NULL |
+| apellido1       | Cadena de caracteres de 50  | NOT NULL |
+| apellido2       | Cadena de caracteres de 50  | NULL     |
+| email           | Cadena de caracteres de 100 | NOT NULL |
+| **codigo_oficina**  | Cadena de caracteres de 10  | NOT NULL |
+| **codigo_jefe**     | Número entero de 11         | NOT NULL |
+| puesto          | Cadena de caracteres de 50  | NULL     |
+
+
+|                | TABLA DE OFICINA           |          |
+|----------------|----------------------------|----------|
+| **codigo_oficina** | Cadena de caracteres de 10 | NOT NULL |
+| ciudad         | Cadena de caracteres de 30 | NOT NULL |
+| pais           | Cadena de caracteres de 50 | NOT NULL |
+| codigo_postal  | Cadena de caracteres de 10 | NT NULL  |
+| telefono       | Cadena de caracteres de 10 | NOT NULL |
+| direccion      | Cadena de caracteres de 50 | NOT NULL |
