@@ -34,6 +34,7 @@
 |----------------|---------------------------|----------|
 | **CODIGO_PEDIDO**  | Número entero de 11       | NOT NULL |
 | **codigo_cliente** | Número entero de 11       | NOT NULL |
+| **codigo_empleado** | Número entero de 11       | NOT NULL |
 | fecha_pedido   | Tipo fecha                | NOT NULL |
 | fecha_esperada | Tipo fecha                | NOT NULL |
 | fecha_entrega  | Tipo fecha                | NULL     |
@@ -50,6 +51,7 @@
 | direccion                  | Cadena de caracteres de 50 | NOT NULL |
 | ciudad                     | Cadena de caracteres de 50 | NOT NULL |
 | codigo_postal              | Cadena de caracteres de 10 | NULL     |
+| **codigo_empleado**              | Cadena de caracteres de 10 | NULL     |
 | **codigo_empleado_rep_ventas** | Número entero de 11        | NOT NULL |
 
 
@@ -74,14 +76,6 @@
 | puesto          | Cadena de caracteres de 50  | NULL     |
 
 
-|                | TABLA DE OFICINA           |          |
-|----------------|----------------------------|----------|
-| **CODIGO_OFICINA** | Cadena de caracteres de 10 | NOT NULL |
-| ciudad         | Cadena de caracteres de 30 | NOT NULL |
-| pais           | Cadena de caracteres de 50 | NOT NULL |
-| codigo_postal  | Cadena de caracteres de 10 | NT NULL  |
-| telefono       | Cadena de caracteres de 10 | NOT NULL |
-| direccion      | Cadena de caracteres de 50 | NOT NULL |
 
 
 ## RESTRICCIONES
