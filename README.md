@@ -7,24 +7,17 @@
 |-------------------|------------------------------------|----------|
 | **CODIGO**            | Cadena de caracteres de 15         |  |
 | nombre            | Cadena de caracteres de 70         | NOT NULL |
-| **gama**             | Cadena de caracteres de 50         | |
 | dimensiones       | Cadena de caracteres de 25         | NULL     |
 | cantidad_en_stock | Número entero de 6                 | NULL     |
 | precio_venta      | Número decimal de 15 y 2 decimales | NOT NULL |
 | precio_proveedor  | Número decimal de 15 y 2 decimales | NULL     |
 
 
-|                   | TABLA GAMA_PRODUCTO    |          |
-|-------------------|------------------------|----------|
-| **GAMA**              | Cadena de texto de 50  | |
-| descripcion_texto | Cadena de texto de 250 | NULL     |
-| descripción_html  | Cadena de texto de 250 | NULL     |
-
 
 
 |                 | TABLA DETALLE DEL PEDIDO    |          |
 |-----------------|-----------------------------|----------|
-| **codigo_pedido**   | Número entero de 11         |  |
+| **CODIGO_PEDIDO**   | Número entero de 11         |  |
 | **codigo_producto** | Cadena de caracteres de 15  |  |
 | cantidad        | Número entero de 11         | NOT NULL |
 | preio_unidad    | Decimal de 15 y 2 decimales | NOT NULL |
@@ -51,8 +44,6 @@
 | direccion                  | Cadena de caracteres de 50 | NOT NULL |
 | ciudad                     | Cadena de caracteres de 50 | NOT NULL |
 | codigo_postal              | Cadena de caracteres de 10 | NULL     |
-| **codigo_empleado**              | Cadena de caracteres de 10 |     |
-| **codigo_empleado_rep_ventas** | Número entero de 11        |  |
 
 
 |                | TABLA DE PAGO                      |          |
@@ -71,7 +62,6 @@
 | apellido1       | Cadena de caracteres de 50  | NOT NULL |
 | apellido2       | Cadena de caracteres de 50  | NULL     |
 | email           | Cadena de caracteres de 100 | NOT NULL |
-| **codigo_oficina**  | Cadena de caracteres de 10  | |
 | **codigo_jefe**     | Número entero de 11         | |
 | puesto          | Cadena de caracteres de 50  | NULL     |
 
