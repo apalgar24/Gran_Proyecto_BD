@@ -44,6 +44,7 @@
 | direccion                  | Cadena de caracteres de 50 | NOT NULL |
 | ciudad                     | Cadena de caracteres de 50 | NOT NULL |
 | codigo_postal              | Cadena de caracteres de 10 | NULL     |
+| **codigo_empleado**              | Número entero de 11 | NOT NULL     |
 
 
 |                | TABLA DE PAGO                      |          |
