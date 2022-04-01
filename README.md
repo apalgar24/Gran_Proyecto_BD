@@ -70,30 +70,26 @@
 
 ## RESTRICCIONES
 
-1. País de la tabla oficina debe ser (España, Francia o Portugal)
+1. email de empleado debe tener obligatoriamente la siguiente sintaxis ("texto"@"texto"."texto")
 
-2. email de empleado debe tener obligatoriamente la siguiente sintaxis ("texto"@"texto"."texto")
+2. forma_pago de la tabla pago, debe ser (tarjeta crédito,paypal o efectivo)
 
-3. forma_pago de la tabla pago, debe ser (tarjeta crédito,paypal o efectivo)
+3. estado de la tabla de pedido (Empaquetando,Enviando,En camino,En correos,Llegada a destino)
 
-4. estado de la tabla de pedido (Empaquetando,Enviando,En camino,En correos,Llegada a destino)
+4. fecha_pedido debe ser a partir del año de 2020 
 
-5. fecha_pedido debe ser a partir del año de 2020 
+5. Los nombres y apellidos de los empeleados y los clientes, deben tener la primera letra en mayuscula
 
-6. Los nombres y apellidos de los empeleados y los clientes, deben tener la primera letra en mayuscula
+6. Añadir la columna salario a la tabla empleado con tipo decimal not null
 
-7. Añadir la columna salario a la tabla empleado con tipo decimal not null
+7. Teléfono de la tabla empelado y cliente debe ser único 
 
-8. La longitud de descripción_texto de la tabla gamma debe ser de longitud 100 
+8. codigo:cliente y codigo_empleado deben ser 8 números y un letra al final
 
-9. Teléfono de la tabla empelado y cliente debe ser único 
+9. ELimar la columna ciudad de la tabla cliente
 
-10. codigo:cliente y codigo_empleado deben ser 8 números y un letra al final
+10. Modificar la columna email para que sea único
 
-11. ELimar la columna ciudad de la tabla cliente
+11. Desactivar la restricción del email 
 
-12. Modificar la columna email para que sea único
-
-13. Desactivar la restricción del email 
-
-14. Activar restricción del email
+12. Activar restricción del email
