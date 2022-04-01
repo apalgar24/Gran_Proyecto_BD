@@ -27,7 +27,6 @@
 |----------------|---------------------------|----------|
 | **CODIGO_PEDIDO**  | Número entero de 11       |  |
 | **codigo_cliente** | Número entero de 11       |  |
-| **codigo_empleado** | Número entero de 11       |  |
 | fecha_pedido   | Tipo fecha                | NOT NULL |
 | fecha_esperada | Tipo fecha                | NOT NULL |
 | fecha_entrega  | Tipo fecha                | NULL     |
