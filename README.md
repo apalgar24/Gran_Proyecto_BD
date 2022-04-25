@@ -86,10 +86,10 @@
 
 8. codigo:cliente y codigo_empleado deben ser 8 números y un letra al final
 
-9. ELimar la columna ciudad de la tabla cliente
+9. Elimar la columna ciudad de la tabla cliente
 
 10. Modificar la columna email para que sea único
 
-11. Desactivar la restricción del email 
+11. Eliminar la restricción del email 
 
-12. Activar restricción del email
+12. Añadir restricción del email

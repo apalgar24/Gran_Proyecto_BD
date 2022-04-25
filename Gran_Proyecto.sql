@@ -1,5 +1,7 @@
 --- Creación de base de datos jardinería;
 CREATE DATABASE jardineria CHARACTER SET utf8mb4;
+usuario: granprojecto
+passwd: granprojecto
 USE jardineria;
 
 --- Creación de tablas;
@@ -26,7 +28,8 @@ CREATE TABLE empleado (
   PRIMARY KEY (codigo_empleado),
   FOREIGN KEY (codigo_jefe) REFERENCES empleado (codigo_empleado),
   CONSTRAINT ch_email CHECK(email REGEXP '^[^@\s]+@[^@\s]+\.[^@\s]+$'),
-   CONSTRAINT chech ch_nombre_empleado CHECK (nombre REGEXP '^[A-Z]*')
+  CONSTRAINT ch_nombre_empleado CHECK (nombre REGEXP '^[A-Z]*'),
+  CONSTRAINT ch_codigo_empleado CHECK (codigo_empleado REGEXP '^[0-9]{8}[A-Z]$')
 );
 
 
@@ -42,7 +45,8 @@ CREATE TABLE cliente (
   codigo_empleado INTEGER DEFAULT NULL,
   PRIMARY KEY (codigo_cliente),
   FOREIGN KEY (codigo_empleado) REFERENCES empleado (codigo_empleado),
-  CONSTRAINT chech ch_nombre_cliente CHECK (nombre_cliente REGEXP '^[A-Z]*')
+  CONSTRAINT ch_nombre_cliente CHECK (nombre_cliente REGEXP '^[A-Z]*'),
+  CONSTRAINT ch_codigo_cliente CHECK (codigo_cliente REGEXP '^[0-9]{8}[A-Z]$')
 );
 
 
@@ -82,3 +86,14 @@ CREATE TABLE detalle_pedido (
   FOREIGN KEY (codigo_producto) REFERENCES producto (codigo_producto)
 );
 
+--- MOdificar Tablas
+
+ALTER TABLE empleado ADD salario decimal (4,2) NOT NULL;
+
+ALTER TABLE cliente drop column ciudad;
+
+ALTER TABLE MODIFY  email VARCHAR(100) NOT NULL UNIQUE;
+
+ALTER TABLE empleado DROP CONSTRAINT ch_email;
+
+ALTER TABLE empleado ADD CONSTRAINT ch_email CHECK(email REGEXP '^[^@\s]+@[^@\s]+\.[^@\s]+$');
